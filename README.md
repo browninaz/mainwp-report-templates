@@ -1,5 +1,5 @@
 # MainWP Pro Report Templates
-This is the repo for Pink Lizard Web custom MainWP report templates. 
+This is the repo for Pink Lizard Web MainWP Pro Report templates. 
 
 After scouring the internet for template ideas, it seems that there are few independant developers or agencies that have used or shared MainWP Pro Report Template ideas and designs. 
 
