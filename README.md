@@ -1,5 +1,7 @@
 # MainWP Report Templates
-This is the repo for Pink Lizard Web custom MainWP report templates. After scouring the internet for template ideas, it seems that there are few independant developers or agencies that have used or shared MainWP Pro Report Template ideas and designs. 
+This is the repo for Pink Lizard Web custom MainWP report templates. 
+
+After scouring the internet for template ideas, it seems that there are few independant developers or agencies that have used or shared MainWP Pro Report Template ideas and designs. 
 
 The markup and styles for templates 1 and 2 respectively belong to Joshua Vandercar at Typewheel (https://typewheel.xyz/). Thank you Joshua for posting what you have created, and for helping us with the direction needed to create personalized MainWP report templates.
 
