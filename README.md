@@ -9,4 +9,4 @@ Template 3 is the html written and styled from a MS Word doc, and is a Pink Liza
 
 The Essential Business template will be sent to specific clients once complete and rendering properly.
 
-I am new to code and web development, and learning this as I go. If anyone visiting this page has custom template ideas or complete designs, please message me. Any help is greatly appreciated!
+I am new to code and web development and learning this as I go. If anyone visiting this page has custom template ideas or complete designs, please message me. Any help is greatly appreciated!
