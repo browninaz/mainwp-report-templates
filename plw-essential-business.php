@@ -142,10 +142,10 @@ $outro = nl2br($outro); // to fix
 					<table style="margin-top: -40px; border-top: 0px; border-bottom: 2px solid #ff1493;">
 						<tr>
 							<!-- Image token pulled from report content and design customization under the personal branding tab -->
-							<td style="border-bottom: 0px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:125px;height:auto;"></td>
+							<td style="border-bottom: 0px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:100px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
-								<p style="text-align: left; margin-left: -300px;">PINK LIZARD WEB</p><br>
-								<p style="text-align: left; margin-left: -300px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
+								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB</p><br>
+								<p style="text-align: left; margin-left: -275px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
 							</td>
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
 							<td style="border-bottom: 0px;">
@@ -176,10 +176,10 @@ $outro = nl2br($outro); // to fix
 
 				<!-- Data pulled from the report introduction message editor under the custom content tab -->
 				<div style="width:100%;text-align:left;">
-					<div style="margin:10px;text-align:left;">
+					<div style="margin:10px; text-align:left;">
 					</div>
 					<div style="padding:0px;">
-						<div style="padding:0px 60px 60px;">
+						<div style="padding:0px 60px 60px; margin-top: -20px;">
 							<p><?php echo MainWP_Pro_Reports_Utility::esc_content($intro); ?></p>
 						</div>
 						<!-- End intro data -->
