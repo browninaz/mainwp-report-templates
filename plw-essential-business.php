@@ -171,6 +171,8 @@ $outro = nl2br($outro); // to fix
 						<p><?php echo MainWP_Pro_Reports_Utility::esc_content($intro); ?></p>
 						<!-- End intro data -->
 
+						<!--------------------------------------- Start new table styles here -------------------------------------------------->
+
 						<!-- Begin overview table -->
 						<h2>Overview</h2>
 						<table cellspacing="0">
