@@ -157,16 +157,16 @@ $outro = nl2br($outro); // to fix
 				<!-- End Header -->
 
 				<!-- Client information and report date range directly under header -->
-				<table style="border: 0px;">
+				<table style="border: 0px; margin-right: -100px;">
 					<tr>
 						<td  style="vertical-align: center;">
-							<p style="padding-left: 20px;">Client:</p>
+							<p style="padding-left: 40px;">Client:</p>
 						</td>
 						<td>
 							<p style="margin-left: -60px;">[client.contact.name]<br>[client.contact.address.1]</p>
 						</td>
 						<td style="vertical-align: center; text-align: right; padding-left: 50px;">
-							<p style="margin-left: -10px;">Report Period:<br>Website:</p>
+							<p style="margin-left: -30px;">Report Period:<br>Website:</p>
 						</td>
 						<td style="vertical-align: top;">
 							<p>[report.daterange]<br>[client.site.url]</p>
@@ -174,6 +174,7 @@ $outro = nl2br($outro); // to fix
 						<td></td>
 					</tr>
 				</table>
+				
 				<!-- Data pulled from the report introduction message editor under the custom content tab -->
 				<div style="width:100%;text-align:left;">
 					<div style="margin:10px;text-align:left;">
