@@ -11,4 +11,4 @@ The plw-essential-business template will be sent to clients that subscribed to t
 
 The goal is to customize templates to use for clients at each maintenance package level. Once the first template is styled to satisfaction, the rest should be  pretty straight forward.
 
-I am new to code and web development and learning this as I go. If anyone visiting this page has custom template ideas or complete designs, please message me. Any help is greatly appreciated! Also, once these templates are complete and can be of use to you, feel free to copy!
+I am new to code and web development and learning this as I go. If anyone visiting this page has custom template ideas or complete designs, please message me. Any help is greatly appreciated! Also, once these templates are complete and can be of use to you, feel free to copy! I will post an update once complete.
