@@ -139,7 +139,7 @@ $outro = nl2br($outro); // to fix
 				<div style="margin:0 0 30px 0;text-align:center;">
 
 					<!-- Report Header -->
-					<table>
+					<table style="margin-top: -40px; border-top: 0px; border-bottom: 2px solid #ff1493;">
 						<tr>
 							<!-- Image token pulled from report content and design customization under the personal branding tab -->
 							<td style="border-bottom: 0px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:125px;height:auto;"></td>
@@ -157,24 +157,23 @@ $outro = nl2br($outro); // to fix
 				<!-- End Header -->
 
 				<!-- Client information and report date range directly under header -->
-				<table style="border: 0px; margin-right: -100px;">
+				<table style="border: 0px; margin-right: -100px; margin-top: -30px;">
 					<tr>
-						<td  style="vertical-align: center;">
+						<td style="vertical-align: center; border-bottom: 0px;">
 							<p style="padding-left: 40px;">Client:</p>
 						</td>
-						<td>
+						<td style="border-bottom: 0px;">
 							<p style="margin-left: -60px;">[client.contact.name]<br>[client.contact.address.1]</p>
 						</td>
-						<td style="vertical-align: center; text-align: right; padding-left: 50px;">
+						<td style="vertical-align: center; text-align: right; padding-left: 50px; border-bottom: 0px;">
 							<p style="margin-left: -30px;">Report Period:<br>Website:</p>
 						</td>
-						<td style="vertical-align: top;">
+						<td style="vertical-align: top; border-bottom: 0px;">
 							<p>[report.daterange]<br>[client.site.url]</p>
 						</td>
-						<td></td>
 					</tr>
 				</table>
-				
+
 				<!-- Data pulled from the report introduction message editor under the custom content tab -->
 				<div style="width:100%;text-align:left;">
 					<div style="margin:10px;text-align:left;">
