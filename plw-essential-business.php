@@ -162,6 +162,8 @@ $outro = nl2br($outro); // to fix
 					</div>
 					<!-- End site name,etc... -->
 				</div>
+				
+				<!-- Removed report title, maybe replace? -->
 
 				<!-- Removed page break -->
 
