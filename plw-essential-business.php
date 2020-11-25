@@ -66,14 +66,17 @@ $outro = nl2br($outro); // to fix
 <html>
 
 <head>
-		<style type="text/css">
-		@page { margin: 50px 0px 0px 0px;}
+	<style type="text/css">
+		@page {
+			margin: 50px 0px 0px 0px;
+		}
 
-	 	.page-break { page-break-after: always; }
+		.page-break {
+			page-break-after: always;
+		}
+
 		body {
-			<?php echo esc_html( $bg_color ); ?>
-			<?php echo esc_html( $text_color ); ?>
-			font-size: 13px;
+			<?php echo esc_html($bg_color); ?><?php echo esc_html($text_color); ?>font-size: 13px;
 			font-family: 'Lato', sans-serif;
 		}
 
@@ -86,8 +89,8 @@ $outro = nl2br($outro); // to fix
 		}
 
 		table {
-			border:1px solid #ddd;
-			width:100%;
+			border: 1px solid #ddd;
+			width: 100%;
 		}
 
 		table th {
@@ -97,38 +100,36 @@ $outro = nl2br($outro); // to fix
 		}
 
 		table td {
-			padding:10px;
-			border-bottom:1px solid #ddd;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
 			font-family: 'Lato', sans-serif;
 		}
 
 		h1 {
-			<?php echo esc_html( $accent_color ); ?>
-			font-weight:bold;
-			font-size:32px;
-			margin-bottom:5px;
+			<?php echo esc_html($accent_color); ?>font-weight: bold;
+			font-size: 32px;
+			margin-bottom: 5px;
 			font-family: 'Lato', sans-serif;
 		}
 
 		h2 {
-			<?php echo esc_html( $accent_color ); ?>
-			font-weight:bold;
+			<?php echo esc_html($accent_color); ?>font-weight: bold;
 			font-size: 22px;
 			font-family: 'Lato', sans-serif;
 		}
 
 		h3 {
-			color:#666666;
-			font-weight:normal;
-			font-size:24px;
+			color: #666666;
+			font-weight: normal;
+			font-size: 24px;
 			font-family: 'Lato', sans-serif;
 		}
 
 		#ga-chart img {
 			width: 100%;
 		}
-		</style>
-	</head>
+	</style>
+</head>
 
 <body>
 	<header></header>
