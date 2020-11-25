@@ -144,7 +144,7 @@ $outro = nl2br($outro); // to fix
 							<!-- Image token pulled from report content and design customization under the personal branding tab -->
 							<td style="border-bottom: 0px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:100px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
-								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB</p><br>
+								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB, LLC</p><br>
 								<p style="font-size: 12px; text-align: left; margin-left: -275px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
 							</td>
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
