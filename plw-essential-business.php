@@ -66,17 +66,14 @@ $outro = nl2br($outro); // to fix
 <html>
 
 <head>
-	<style type="text/css">
-		@page {
-			margin: 50px 0px 0px 0px;
-		}
+		<style type="text/css">
+		@page { margin: 50px 0px 0px 0px;}
 
-		.page-break {
-			page-break-after: always;
-		}
-
+	 	.page-break { page-break-after: always; }
 		body {
-			<?php echo esc_html($bg_color); ?><?php echo esc_html($text_color); ?>font-size: 13px;
+			<?php echo esc_html( $bg_color ); ?>
+			<?php echo esc_html( $text_color ); ?>
+			font-size: 13px;
 			font-family: 'Lato', sans-serif;
 		}
 
@@ -89,47 +86,49 @@ $outro = nl2br($outro); // to fix
 		}
 
 		table {
-			border: 1px solid #000;
-			width: 100%;
+			border:1px solid #ddd;
+			width:100%;
 		}
 
 		table th {
 			padding: 10px;
 			background: #e5e5e5;
-			border-bottom: 1px solid #000;
+			border-bottom: 1px solid #ddd;
 		}
 
 		table td {
-			padding: 10px;
-			border-bottom: 1px solid #000;
+			padding:10px;
+			border-bottom:1px solid #ddd;
 			font-family: 'Lato', sans-serif;
 		}
 
 		h1 {
-			<?php echo esc_html($accent_color); ?>font-weight: bold;
-			font-size: 32px;
-			margin-bottom: 5px;
+			<?php echo esc_html( $accent_color ); ?>
+			font-weight:bold;
+			font-size:32px;
+			margin-bottom:5px;
 			font-family: 'Lato', sans-serif;
 		}
 
 		h2 {
-			<?php echo esc_html($accent_color); ?>font-weight: bold;
+			<?php echo esc_html( $accent_color ); ?>
+			font-weight:bold;
 			font-size: 22px;
 			font-family: 'Lato', sans-serif;
 		}
 
 		h3 {
-			color: #666666;
-			font-weight: normal;
-			font-size: 24px;
+			color:#666666;
+			font-weight:normal;
+			font-size:24px;
 			font-family: 'Lato', sans-serif;
 		}
 
 		#ga-chart img {
 			width: 100%;
 		}
-	</style>
-</head>
+		</style>
+	</head>
 
 <body>
 	<header></header>
@@ -150,7 +149,7 @@ $outro = nl2br($outro); // to fix
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
 							<td style="border-bottom: 0px;">
 								<p style="margin-right: -140px;"><?php echo esc_html($heading); ?></p>
-								<!-- Change plan type accoring to client -->
+								<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
 								<p style="margin-right: -140px; margin-top: -18px;">ESSENTIAL MAINTENANCE PLAN</p>
 							</td>
 						</tr>
@@ -194,9 +193,40 @@ $outro = nl2br($outro); // to fix
 						<div style="padding:0px;">
 							<div style="padding:0px 60px 60px;">
 
-								<!-- Begin overview table -->
-								<h2 style="margin-top: -50px;"> Activity Overview</h2>
+								<!-- Begin performance table -->
+								<h2 style="text-align: left;"> Activity Overview</h2>
 								<p style="border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px;">Performance</p>
+								<div style="margin-left: 50px;">
+									<table>
+										<tr>
+											<td>Site Vistiors</td>
+											<td>Page Views</td>
+											<td>Page Speed</td>
+										</tr>
+										<tr>
+											<td>[ga.visits] </td>
+											<td>[ga.pageviews]</td>
+											<td>Mobile &nbsp;&nbsp;&nbsp;&nbsp; Desktop</td>
+										</tr>
+										<tr>
+											<td>New Visits</td>
+											<td>Uptime</td>
+											<!-- Add page speed tokens when done formatting table -->
+											<td>100</td>
+											<td>100</td>
+										</tr>
+										<tr>
+											<td>[ga.new.visits]</td>
+											<td>[aum.uptime30] </td>
+										</tr>
+									</table>
+								</div>
+
+								<!-- End Performance Table -->
+
+								<div class="page-break"></div>
+
+
 								<table cellspacing="0">
 									<tbody>
 										<tr>
