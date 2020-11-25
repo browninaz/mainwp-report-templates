@@ -114,7 +114,7 @@ $outro = nl2br($outro); // to fix
 
 		h2 {
 			<?php echo esc_html($accent_color); ?>font-weight: bold;
-			font-size: 24px;
+			font-size: 22px;
 			font-family: 'Lato', sans-serif;
 		}
 
@@ -145,11 +145,13 @@ $outro = nl2br($outro); // to fix
 							<td style="border-bottom: 0px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:100px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
 								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB</p><br>
-								<p style="text-align: left; margin-left: -275px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
+								<p style="font-size: 12px; text-align: left; margin-left: -275px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
 							</td>
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
 							<td style="border-bottom: 0px;">
 								<p style="margin-right: -140px;"><?php echo esc_html($heading); ?></p>
+								<!-- Change plan type accoring to client -->
+								<p style="margin-right: -140px; margin-top: -18px;">ESSENTIAL MAINTENANCE PLAN</p>
 							</td>
 						</tr>
 					</table>
@@ -193,7 +195,8 @@ $outro = nl2br($outro); // to fix
 							<div style="padding:0px 60px 60px;">
 
 								<!-- Begin overview table -->
-								<h2> Activity Overview</h2>
+								<h2 style="margin-top: -50px;"> Activity Overview</h2>
+								<p style="border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px;">Performance</p>
 								<table cellspacing="0">
 									<tbody>
 										<tr>
