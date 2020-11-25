@@ -136,9 +136,9 @@ $outro = nl2br($outro); // to fix
 	<main>
 		<div style="margin:0px;">
 			<div style="width:100%;">
+			
+				<!-- Report Header -->
 				<div style="margin:0 0 30px 0;text-align:center;">
-
-					<!-- Report Header -->
 					<table style="margin-top: -40px; border-top: 0px; border-bottom: 2px solid #ff1493;">
 						<tr>
 							<!-- Image token pulled from report content and design customization under the personal branding tab -->
