@@ -136,13 +136,13 @@ $outro = nl2br($outro); // to fix
 	<main>
 		<div style="margin:0px;">
 			<div style="width:100%;">
-			
+
 				<!-- Report Header -->
 				<div style="margin:0 0 30px 0;text-align:center;">
 					<table style="margin-top: -40px; border-top: 0px; border-bottom: 2px solid #ff1493;">
 						<tr>
 							<!-- Image token pulled from report content and design customization under the personal branding tab -->
-							<td style="border-bottom: 0px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:100px;height:auto;"></td>
+							<td style="border-bottom: 0px; padding-left: 35px; padding-right: 15px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:80px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
 								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB, LLC</p><br>
 								<p style="font-size: 12px; text-align: left; margin-left: -275px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
@@ -162,16 +162,16 @@ $outro = nl2br($outro); // to fix
 				<table style="border: 0px; margin-right: -100px; margin-top: -30px;">
 					<tr>
 						<td style="vertical-align: center; border-bottom: 0px;">
-							<p style="padding-left: 40px;">Client:</p>
+							<p style="padding-left: 40px; font-weight: bold;">Client:</p>
 						</td>
 						<td style="border-bottom: 0px;">
-							<p style="margin-left: -60px;">[client.contact.name]<br>[client.contact.address.1]</p>
+							<p style="margin-top: -25px; margin-left: -95px;">[client.contact.name]<br>[client.contact.address.1]<br>[client.city],&nbsp;[client.state] &nbsp;[client.zip]</p>
 						</td>
 						<td style="vertical-align: center; text-align: right; padding-left: 50px; border-bottom: 0px;">
-							<p style="margin-left: -30px;">Report Period:<br>Website:</p>
+							<p style="font-weight: bold; margin-left: -30px;">Report Period:<br>Website:<br>WordPress Version:<br>PHP Version:<br>MySQL Version:</p>
 						</td>
 						<td style="vertical-align: top; border-bottom: 0px;">
-							<p>[report.daterange]<br>[client.site.url]</p>
+							<p>[report.daterange]<br>[client.site.url]<br>[client.site.version]<br>[client.site.php]<br>[client.site.mysql]</p>
 						</td>
 					</tr>
 				</table>
@@ -195,419 +195,69 @@ $outro = nl2br($outro); // to fix
 							<div style="padding:0px 60px 60px;">
 
 								<!-- Begin performance table -->
-								<h2 style="text-align: left;"> Activity Overview</h2>
-								<p style="border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px;">Performance</p>
+
+								<h2 style="margin-top: -15px; text-align: left;"> Activity Overview</h2>
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px;">Performance</p>
 								<div style="margin-left: 50px;">
-									<table>
+									<table style="border: 0px;">
 										<tr>
-											<td>Site Vistiors</td>
-											<td>Page Views</td>
-											<td>Page Speed</td>
-										</tr>
-										<tr>
-											<td>[ga.visits] </td>
-											<td>[ga.pageviews]</td>
-											<td>Mobile &nbsp;&nbsp;&nbsp;&nbsp; Desktop</td>
-										</tr>
-										<tr>
-											<td>New Visits</td>
-											<td>Uptime</td>
-											<!-- Add page speed tokens when done formatting table -->
-											<td>100</td>
-											<td>100</td>
-										</tr>
-										<tr>
-											<td>[ga.new.visits]</td>
-											<td>[aum.uptime30] </td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Site Vistiors<br>[ga.visits]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Page Views<br>[ga.pageviews]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">New Visits<br>[ga.new.visits]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Uptime<br>[aum.uptime30]</td>
 										</tr>
 									</table>
 								</div>
 
 								<!-- End Performance Table -->
 
+								<!-- Begin Updates table -->
+
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;">Updates</p>
+								<div style="margin-left: 50px;">
+									<table style="margin-top: 10px; border: 0px;">
+										<tr>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">WordPress Updates<br>[wordpress.updated.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Theme Updates<br>[theme.updated.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Plugin Updates<br>[plugin.updated.count]</td>
+										</tr>
+									</table>
+								</div>
+
+								<!-- End Updates Table -->
+
+								<!-- Begin Security table -->
+
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;">Security</p>
+								<div style="margin-left: 50px;">
+									<table style="margin-top: 10px; border: 0px;">
+										<tr>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Scans<br>[sucuri.checks.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Optimizations<br>[maintenance.process.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>[backup.created.count]</td>
+										</tr>
+									</table>
+								</div>
+
+								<!-- End Security Table -->
+
+								<!-- Begin Posts table -->
+
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;">Posts</p>
+								<div style="margin-left: 50px;">
+									<table style="margin-top: 10px; border: 0px;">
+										<tr>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Posts Created<br>[post.created.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Comments<br>[comment.created.count]</td>
+										</tr>
+									</table>
+								</div>
+
+								<!-- End PostsTable -->
+
 								<div class="page-break"></div>
 
-
-								<table cellspacing="0">
-									<tbody>
-										<tr>
-											<th><?php echo __('Website', 'mainwp-pro-reports-extension'); ?></th>
-											<td><a href="[client.site.url]" style="<?php echo esc_html($accent_color); ?>" target="_blank">[client.site.url]</a></td>
-										</tr>
-										<tr>
-											<th><?php echo __('WordPress Version', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[client.site.version]</td>
-										</tr>
-										<tr>
-											<th><?php echo __('Active Theme', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[client.site.theme]</td>
-										</tr>
-										<tr>
-											<th><?php echo __('PHP Version', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[client.site.php]</td>
-										</tr>
-										<tr>
-											<th><?php echo __('MySQL Version', 'mainwp-pro-reports-extension'); ?></th>
-											<td style="padding:10px;">[client.site.mysql]</td>
-										</tr>
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['uptime']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Website Uptime', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[aum.alltimeuptimeratio]</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['security']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Security Scans', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[sucuri.checks.count]</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['plugins-updates']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Plugins Updated', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[plugin.updated.count]</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['themes-updates']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Themes Updated', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[theme.updated.count]</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['backups']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Backups Created', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[backup.created.count]</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['maintenance']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Database Optimizations', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[maintenance.process.count]</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-										[config-section-data]
-										<?php echo $config_tokens[$showhide_values['pagespeed']]; ?>
-										[remove-if-empty]
-										<tr>
-											<th><?php echo __('Average Pagespeed', 'mainwp-pro-reports-extension'); ?></th>
-											<td>[pagespeed.average.desktop] / 100</td>
-										</tr>
-										[/remove-if-empty]
-										[/config-section-data]
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<!-- End Overview. Do not remove pagebreak to allow room for sections if not empty. -->
-
-						<!-- Uptime Data -->
-						<?php if (is_plugin_active('advanced-uptime-monitor-extension/advanced-uptime-monitor-extension.php')) : ?>
-							[config-section-data]
-							<?php echo $config_tokens[$showhide_values['uptime']]; ?>
-							<div class="page-break"></div>
-							<div style="padding:0px 30px 30px;">
-								<div style="padding:0px 30px 30px;">
-									<h2><?php echo __('Uptime Monitoring', 'mainwp-pro-reports-extension'); ?></h2>
-									<?php do_action('mainwp_pro_reports_before_uptime'); ?>
-									<table cellspacing="0">
-										<tbody>
-											<tr>
-												<th><?php echo __('Overall', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[aum.alltimeuptimeratio]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Last 7 Days', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[aum.uptime7]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Last 15 Days', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[aum.uptime15]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Last 30 Days', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[aum.uptime30]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Last 45 Days', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[aum.uptime45]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Last 60 Days', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[aum.uptime60]</td>
-											</tr>
-										</tbody>
-									</table>
-									<?php do_action('mainwp_pro_reports_after_uptime'); ?>
-								</div>
-							</div>
-							[/config-section-data]
-						<?php endif; ?>
-						<!-- End Uptime Data -->
-
-						<!-- Security Scans Data -->
-						<?php if (is_plugin_active('mainwp-sucuri-extension/mainwp-sucuri-extension.php')) : ?>
-							[config-section-data]
-							<?php echo $config_tokens[$showhide_values['security']]; ?>
-							<div class="page-break"></div>
-							<div style="padding:0px 30px 30px;">
-								<div style="padding:0px 30px 30px;">
-									<h2><?php echo __('Security', 'mainwp-pro-reports-extension'); ?></h2>
-									<?php do_action('mainwp_pro_reports_before_sucuri'); ?>
-									<table cellspacing="0">
-										<thead>
-											<tr>
-												<th><?php echo __('Scanned on', 'mainwp-pro-reports-extension'); ?></th>
-												<th><?php echo __('Status', 'mainwp-pro-reports-extension'); ?></th>
-												<th><?php echo __('Webtrust Status', 'mainwp-pro-reports-extension'); ?></th>
-											</tr>
-										</thead>
-										<tbody>
-											[section.sucuri.checks]
-											<tr>
-												<td>[sucuri.check.date]</td>
-												<td>[sucuri.check.status]</td>
-												<td>[sucuri.check.webtrust]</td>
-											</tr>
-											[/section.sucuri.checks]
-										</tbody>
-									</table>
-									<?php do_action('mainwp_pro_reports_after_sucuri'); ?>
-								</div>
-							</div>
-							[/config-section-data]
-						<?php endif; ?>
-						<!-- End Security Scans Data -->
-
-
-						<!-- Updates Data -->
-
-						<?php do_action('mainwp_pro_reports_before_updates'); ?>
-
-						[config-section-data]
-						<?php echo $config_tokens[$showhide_values['wp-update']]; ?>
-						<div class="page-break"></div>
-						<div style="padding:0px 30px 30px;">
-							<div style="padding:0px 30px 30px;">
-								<h2><?php echo __('WordPress Updates', 'mainwp-pro-reports-extension'); ?></h2>
-								<table cellspacing="0">
-									<thead>
-										<tr>
-											<th><?php echo __('Updated on', 'mainwp-pro-reports-extension'); ?></th>
-											<th><?php echo __('Old Version', 'mainwp-pro-reports-extension'); ?></th>
-											<th><?php echo __('New Version', 'mainwp-pro-reports-extension'); ?></th>
-										</tr>
-									</thead>
-									<tbody>
-										[section.WordPress.updated]
-										<tr>
-											<td>[WordPress.updated.date]</td>
-											<td><span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[WordPress.old.version]</span></td>
-											<td><span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[WordPress.current.version]</span></td>
-										</tr>
-										[/section.WordPress.updated]
-									</tbody>
-								</table>
-							</div>
-						</div>
-						[/config-section-data]
-
-						[config-section-data]
-						<?php echo $config_tokens[$showhide_values['plugins-updates']]; ?>
-						<div class="page-break"></div>
-						<div style="padding:0px 30px 30px;">
-							<div style="padding:0px 30px 30px;">
-								<h2><?php echo __('Plugins Updates', 'mainwp-pro-reports-extension'); ?></h2>
-								<table cellspacing="0">
-									<thead>
-										<tr>
-											<th><?php echo __('Updated on', 'mainwp-pro-reports-extension'); ?></th>
-											<th><?php echo __('Plugin', 'mainwp-pro-reports-extension'); ?></th>
-											<th><?php echo __('Version', 'mainwp-pro-reports-extension'); ?></th>
-										</tr>
-									</thead>
-									<tbody>
-										[section.plugins.updated]
-										<tr>
-											<td>[plugin.updated.date]</td>
-											<td><span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[plugin.name]</span></td>
-											<td>From [plugin.old.version] to <span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[plugin.current.version]</span></td>
-										</tr>
-										[/section.plugins.updated]
-									</tbody>
-								</table>
-							</div>
-						</div>
-						[/config-section-data]
-
-						[config-section-data]
-						<?php echo $config_tokens[$showhide_values['themes-updates']]; ?>
-						<div class="page-break"></div>
-						<div style="padding:0px 30px 30px;">
-							<div style="padding:0px 30px 30px;">
-								<h2><?php echo __('Themes Updates', 'mainwp-pro-reports-extension'); ?></h2>
-								<table cellspacing="0">
-									<thead>
-										<tr>
-											<th><?php echo __('Updated on', 'mainwp-pro-reports-extension'); ?></th>
-											<th><?php echo __('Theme', 'mainwp-pro-reports-extension'); ?></th>
-											<th><?php echo __('Version', 'mainwp-pro-reports-extension'); ?></th>
-										</tr>
-									</thead>
-									<tbody>
-										[section.themes.updated]
-										<tr>
-											<td>[theme.updated.date] </td>
-											<td><span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[theme.name]</span></td>
-											<td>From [theme.old.version] to <span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[theme.current.version]</span></td>
-										</tr>
-										[/section.themes.updated]
-									</tbody>
-								</table>
-							</div>
-						</div>
-						[/config-section-data]
-
-						<?php do_action('mainwp_pro_reports_after_updates'); ?>
-
-						<!-- End Updates Data -->
-
-						<!-- Backups Data -->
-						<?php
-						if (
-							is_plugin_active('mainwp-backwpup-extension/mainwp-backwpup-extension.php')
-							|| is_plugin_active('mainwp-backupwordpress-extension/mainwp-backupwordpress-extension.php')
-							|| is_plugin_active('mainwp-buddy-extension/mainwp-buddy-extension.php')
-							|| is_plugin_active('mainwp-updraftplus-extension/mainwp-updraftplus-extension.php')
-							|| is_plugin_active('mainwp-timecapsule-extension/mainwp-timecapsule-extension.php')
-						) :
-						?>
-							[config-section-data]
-							<?php echo $config_tokens[$showhide_values['backups']]; ?>
-							<div class="page-break"></div>
-							<div style="padding:0px 30px 30px;">
-								<div style="padding:0px 30px 30px;">
-									<h2 style="<?php echo esc_html($accent_color); ?>font-weight:bold;font-size:24px;"><?php echo __('Backups', 'mainwp-pro-reports-extension'); ?></h2>
-									<?php do_action('mainwp_pro_reports_before_backups'); ?>
-									<table cellspacing="0">
-										<thead>
-											<tr>
-												<th><?php echo __('Backup Date', 'mainwp-pro-reports-extension'); ?></th>
-												<th><?php echo __('Backup Type', 'mainwp-pro-reports-extension'); ?></th>
-											</tr>
-										</thead>
-										<tbody>
-											[section.backups.created]
-											<tr>
-												<td>[backup.created.date]</td>
-												<td><span style="font-weight:bold;<?php echo esc_html($accent_color); ?>">[backup.created.type]</span></td>
-											</tr>
-											[/section.backups.created]
-										</tbody>
-									</table>
-									<?php do_action('mainwp_pro_reports_after_backups'); ?>
-								</div>
-							</div>
-							[/config-section-data]
-						<?php endif; ?>
-						<!-- End Backups Data -->
-
-						<!-- Google Analytics Data -->
-						<?php if (is_plugin_active('mainwp-google-analytics-extension/mainwp-google-analytics-extension.php')) : ?>
-							[config-section-data]
-							<?php echo $config_tokens[$showhide_values['ga']]; ?>
-							[config-section-extra max-empty="7" /]
-							<div class="page-break"></div>
-							<div style="padding:0px 30px 30px;">
-								<div style="padding:0px 30px 30px;">
-									<h2><?php echo __('Analytics', 'mainwp-pro-reports-extension'); ?></h2>
-									<?php do_action('mainwp_pro_reports_before_ga'); ?>
-									<div style="margin: 30px 0;" id="ga-chart">[ga.visits.chart]</div>
-									<table style="border:1px solid #000;width:100%;clear:both;" cellspacing="0">
-										<tbody>
-											<tr>
-												<th><?php echo __('Website Visits', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[ga.visits]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Page Views', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[ga.pageviews]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Page Visits', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[ga.pages.visit]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Bounce Rate', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[ga.bounce.rate]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('Average Time', 'mainwp-pro-reports-extension'); ?></th>
-												<td>[ga.avg.time]</td>
-											</tr>
-											<tr>
-												<th><?php echo __('New Visits', 'mainwp-pro-reports-extension'); ?></th>
-												<td style="padding:10px;">[ga.new.visits]</td>
-											</tr>
-										</tbody>
-									</table>
-									<?php do_action('mainwp_pro_reports_after_ga'); ?>
-								</div>
-							</div>
-							[/config-section-data]
-						<?php endif; ?>
-						<!-- End Google Analytics Data -->
-
-						<!-- Maintenance Data -->
-						<?php if (is_plugin_active('mainwp-maintenance-extension/mainwp-maintenance-extension.php')) : ?>
-							[config-section-data]
-							<?php echo $config_tokens[$showhide_values['maintenance']]; ?>
-							<div class="page-break"></div>
-							<div style="padding:0px 30px 30px;">
-								<div style="padding:0px 30px 30px;">
-									<h2><?php echo __('Maintenance', 'mainwp-pro-reports-extension'); ?></h2>
-									<?php do_action('mainwp_pro_reports_before_maintenance'); ?>
-									<table style="border:1px solid #000;width:100%;clear:both;" cellspacing="0">
-										<thead>
-											<tr>
-												<th><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></th>
-												<th><?php echo __('Details', 'mainwp-pro-reports-extension'); ?></th>
-											</tr>
-										</thead>
-										<tbody>
-											[section.maintenance.process]
-											<tr>
-												<td>[maintenance.process.date]</td>
-												<td>[maintenance.process.details]</td>
-
-											</tr>
-											[/section.maintenance.process]
-										</tbody>
-									</table>
-									<?php do_action('mainwp_pro_reports_after_maintenance'); ?>
-								</div>
-							</div>
-							[/config-section-data]
-						<?php endif; ?>
-						<!-- End Maintenance Data -->
+						<!-- End Activity Overview. Do not remove pagebreak to allow room for sections if not empty. -->
 
 						<div class="page-break"></div>
 						<div style="padding:0px 30px 30px;">
