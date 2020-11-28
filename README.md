@@ -7,7 +7,7 @@ The markup and styles for templates 1 and 2 respectively belong to Joshua Vander
 
 Template 3 is a partial and is the html written and styled from a MS Word doc, and is a Pink Lizard Web (https://www.pinklizardweb.com/) template in progress as of 11.21.2020. As of now, no templates are complete and ready to use for final output.
 
-The plw-essential-business template will be sent to clients that subscribed to the essential maintenance package once complete and rendering properly. The default template modified for this specific template is the pro-report-basic. 
+The plw-es-bus-no-post template will be sent to clients that subscribed to the essential maintenance package that have not subscriped to content creation once complete and rendering properly. The default template modified for this specific template is the pro-report-basic. 
 
 The goal is to customize templates to use for clients at each maintenance package level. Once the first template is styled to satisfaction, the rest should be  pretty straight forward.
 
