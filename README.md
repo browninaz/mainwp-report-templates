@@ -5,9 +5,7 @@ After scouring the internet for template ideas, it seems there are few independa
 
 The markup and styles for templates 1 and 2 respectively belong to Joshua Vandercar at Typewheel (https://typewheel.xyz/). This markup can be applied to the MainWP Reports body as is (not directly to the Pro Reports templates). Thank you Joshua for posting what you have created, and for helping me with the direction needed to create personalized MainWP report templates.
 
-Template 3 is a partial and is the html written and styled from a MS Word doc, and is a Pink Lizard Web (https://www.pinklizardweb.com/) template in progress as of 11.21.2020. As of now, no templates are complete and ready to use for final output.
-
-The plw-es-bus-no-post template will be sent to clients that subscribed to the essential maintenance package that have not subscriped to content creation once complete and rendering properly. The default template modified for this specific template is the pro-report-basic. 
+The plw-es-bus-no-post template is being sent to clients that subscribed to the essential maintenance package that have not subscriped to content creation. This template is currently being used, but the code needs to be cleaned up and some additional styling needs done (i.e.- padding, margins, etc.)
 
 The goal is to customize templates to use for clients at each maintenance package level. Once the first template is styled to satisfaction, the rest should be  pretty straight forward.
 

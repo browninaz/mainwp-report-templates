@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: MainWP Pro Report Basic Template
-Description: Default template for the MainWP Pro Reports extension. Colors for this report can be changed in the Custom Report Color section below.
+Template Name: Essential Maintenance Report - No Posts
+Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with no blog posts.
 Version: 1.0
-Author: MainWP
+Author: Ben Brown
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/template-basic.jpg
 */
 
@@ -148,7 +148,7 @@ $outro = nl2br($outro); // to fix
 							<td style="border-bottom: 0px; padding-left: 35px; padding-right: 15px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:80px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
 								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB, LLC</p><br>
-								<p style="font-size: 12px; text-align: left; margin-left: -275px; margin-top: -35px;">602-695-9909 | 480-570-6470</p>
+								<p style="font-size: 12px; text-align: left; margin-left: -275px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
 							</td>
 
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
@@ -228,6 +228,7 @@ $outro = nl2br($outro); // to fix
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">WordPress Updates<br>[wordpress.updated.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Theme Updates<br>[theme.updated.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Plugin Updates<br>[plugin.updated.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>
 									</table>
 								</div>
@@ -240,9 +241,10 @@ $outro = nl2br($outro); // to fix
 								<div style="margin-left: 50px;">
 									<table style="margin-top: 10px; border: 0px;">
 										<tr>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Scans<br>[sucuri.checks.count]</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Optimizations<br>[maintenance.process.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Malware Scans<br>[sucuri.checks.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimization<br>[maintenance.process.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>[backup.created.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>
 									</table>
 								</div>
@@ -272,8 +274,8 @@ $outro = nl2br($outro); // to fix
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
-													<td><?php echo __('Old Version', 'mainwp-pro-reports-extension'); ?></td>
 													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Old Version', 'mainwp-pro-reports-extension'); ?></td>
 													<td><?php echo __('New Version', 'mainwp-pro-reports-extension'); ?></td>
 												</tr>
 											</thead>
