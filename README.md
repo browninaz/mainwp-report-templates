@@ -7,6 +7,6 @@ The markup and styles for templates 1 and 2 respectively belong to Joshua Vander
 
 The plw-es-bus-no-post template is sent to clients that subscribed to the essential maintenance package that have not subscriped to content creation. This template is currently being used, but the code needs to be cleaned up and some additional styling needs done (i.e.- padding, margins, etc.)
 
-The goal is to customize templates to use for clients at each maintenance package level. Once the first template is styled to satisfaction, the rest should be  pretty straight forward.
+The goal is to customize templates to use for our clients at each maintenance package level. Once the first template is styled to satisfaction, the rest should be  pretty straight forward.
 
 I am new to code and web development and learning this as I go. If anyone visiting this page has custom template ideas or complete designs, please message me. Any help is greatly appreciated! Also, once these templates are complete and can be of use to you, feel free to copy! I will post an update once complete.
