@@ -28,6 +28,15 @@ $default_config = array(
 	'matomo'          => 0,
 	'pagespeed'       => 0,
 	'maintenance'     => 0,
+	'pages-created'   => 0,
+	'pages-updated'   => 0,
+	'pages-deleted'   => 0,
+	'post-created'    => 0,
+	'post-updated'    => 0,
+	'post-deleted'    => 0,
+	'media-uploaded'  => 0,
+	'media-updated'   => 0,
+	'media-deleted'   => 0,
 );
 
 
@@ -147,17 +156,17 @@ $outro = nl2br($outro); // to fix
 
 							<td style="border-bottom: 0px; padding-left: 35px; padding-right: 15px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:80px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
-								<p style="text-align: left; margin-left: -275px;">PINK LIZARD WEB, LLC</p><br>
-								<p style="font-size: 12px; text-align: left; margin-left: -275px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
+								<p style="text-align: left; margin-top: 12px; margin-left: -300px;">PINK LIZARD WEB, LLC</p><br>
+								<p style="font-size: 12px; text-align: left; margin-left: -300px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
 							</td>
 
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
 
 							<td style="border-bottom: 0px;">
-								<p style="margin-right: -140px;"><?php echo esc_html($heading); ?></p>
+								<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
 
 								<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
-								<p style="margin-right: -140px; margin-top: -18px;">ESSENTIAL MAINTENANCE PLAN</p>
+								<p style="margin-right: -140px; margin-top: -20px;">ESSENTIAL MAINTENANCE PLAN</p>
 							</td>
 						</tr>
 					</table>
@@ -205,9 +214,9 @@ $outro = nl2br($outro); // to fix
 								<!-- Begin performance table -->
 
 								<h2 style="margin-top: -15px; text-align: left;"> Activity Overview</h2>
-								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px;">Performance</p>
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px; padding-bottom: 3px;">Performance</p>
 								<div style="margin-left: 50px;">
-									<table style="border: 0px;">
+									<table style="border: 0px; margin-left: -70px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Site Vistiors<br>[ga.visits]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Page Views<br>[ga.pageviews]</td>
@@ -221,9 +230,9 @@ $outro = nl2br($outro); // to fix
 
 								<!-- Begin Updates table -->
 
-								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;">Updates</p>
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Updates</p>
 								<div style="margin-left: 50px;">
-									<table style="margin-top: 10px; border: 0px;">
+									<table style="margin-top: 10px; margin-left: -25px; border: 0px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">WordPress Updates<br>[wordpress.updated.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Theme Updates<br>[theme.updated.count]</td>
@@ -237,9 +246,9 @@ $outro = nl2br($outro); // to fix
 
 								<!-- Begin Security table -->
 
-								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;">Security</p>
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Security</p>
 								<div style="margin-left: 50px;">
-									<table style="margin-top: 10px; border: 0px;">
+									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Malware Scans<br>[sucuri.checks.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimization<br>[maintenance.process.count]</td>
@@ -267,10 +276,10 @@ $outro = nl2br($outro); // to fix
 
 								[config-section-data]
 								<?php echo $config_tokens[$showhide_values['wp-update']]; ?>
-								<div class="page-break"></div>
+								<!-- <div class="page-break"></div> -->
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;"><?php echo __('WordPress Updates', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('WordPress Updates', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -304,7 +313,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;"><?php echo __('Theme Updates', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Theme Updates', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -338,7 +347,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;"><?php echo __('Plugin Updates', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Plugin Updates', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -384,7 +393,7 @@ $outro = nl2br($outro); // to fix
 									<?php echo $config_tokens[$showhide_values['backups']]; ?>
 									<div style="margin: 0;">
 										<div style="margin: 0;">
-											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;"><?php echo __('Backups', 'mainwp-pro-reports-extension'); ?></p>
+											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Backups', 'mainwp-pro-reports-extension'); ?></p>
 											<?php do_action('mainwp_pro_reports_before_backups'); ?>
 											<table cellspacing="0">
 												<thead>
@@ -417,7 +426,7 @@ $outro = nl2br($outro); // to fix
 									<?php echo $config_tokens[$showhide_values['maintenance']]; ?>
 									<div style="margin: 0;">
 										<div style="margin: 0;">
-											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px;"><?php echo __('Maintenance', 'mainwp-pro-reports-extension'); ?></p>
+											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Maintenance', 'mainwp-pro-reports-extension'); ?></p>
 											<?php do_action('mainwp_pro_reports_before_maintenance'); ?>
 											<table style="border:1px solid #ddd;width:100%;clear:both;" cellspacing="0">
 												<thead>
@@ -444,7 +453,328 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Maintenance Data -->
 
+								<!-- Content Creation and Updates ----------------------------------------------------------------->
+
+								<!-- Pages ------------------------------------------------------->
+
+								<!-- Pages Created -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['pages-created']]; ?>
+
+								<div class="page-break"></div>
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<h2 style="margin-top: -15px; text-align: left;"> Content Creation and Updates</h2>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Pages Created', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Page(s) Created', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.pages.created]
+												<tr>
+													<td>[page.created.date]</td>
+													<td>[page.title]</span></td>
+
+												</tr>
+												[/section.pages.created]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Pages Created -->
+
+								<!-- Pages Updated -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['pages-updated']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Pages Updated', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Page(s) Updated', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.pages.updated]
+												<tr>
+													<td>[page.created.date]</td>
+													<td>[page.title]</span></td>
+
+												</tr>
+												[/section.pages.updated]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Pages Updated -->
+
+								<!-- Pages Deleted -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['pages-deleted']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Pages Deleted', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Page(s) Deleted', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.pages.trashed]
+												<tr>
+													<td>[page.trashed.date]</td>
+													<td>[page.title]</span></td>
+
+												</tr>
+												[/section.pages.trashed]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Pages Deleted -->
+
+								<!-- End Pages --------------------------------------------------->
+
+								<!-- Posts ------------------------------------------------------->
+
+								<!-- Posts Created -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['post-created']]; ?>
+
+								<div class="page-break"></div>
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Posts Created', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Post Created', 'mainwp-pro-reports-extension'); ?></td>
+												</tr>
+											</thead>
+											<tbody>
+												[section.posts.created]
+												<tr>
+													<td>[post.created.date]</td>
+													<td>[post.title]</span></td>
+
+												</tr>
+												[/section.posts.created]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Posts Created -->
+
+								<!-- Posts Updated -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['post-updated']]; ?>
+
+								<div class="page-break"></div>
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Posts Updated', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Post Updated', 'mainwp-pro-reports-extension'); ?></td>
+												</tr>
+											</thead>
+											<tbody>
+												[section.post.updated]
+												<tr>
+													<td>[post.updated.date]</td>
+													<td>[post.title]</span></td>
+
+												</tr>
+												[/section.post.updated]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Posts Updated -->
+
+								<!-- Posts Deleted -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['post-deleted']]; ?>
+
+								<div class="page-break"></div>
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Posts Deleted', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Post Deleted', 'mainwp-pro-reports-extension'); ?></td>
+												</tr>
+											</thead>
+											<tbody>
+												[section.posts.deleted]
+												<tr>
+													<td>[post.deleted.date]</td>
+													<td>[post.title]</span></td>
+
+												</tr>
+												[/section.posts.deleted]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Posts Deleted -->
+
+								<!-- End Posts --------------------------------------------------->
+
+								<!-- Media ------------------------------------------------------->
+
+								<!-- Media Uploaded -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['media-uploaded']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Uploads', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Media Upload', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.media.uploaded]
+												<tr>
+													<td>[media.uploaded.date]</td>
+													<td>[media.name]</span></td>
+
+												</tr>
+												[/section.media.uploaded]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Media Uploaded-->
+
+								<!-- Media Updated -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['media-updated']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Updated', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Media Updated', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.media.updated]
+												<tr>
+													<td>[media.updated.date]</td>
+													<td>[media.name]</span></td>
+
+												</tr>
+												[/section.media.updated]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Media Updated -->
+
+								<!-- Media Deleted -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['media-deleted']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Deleted', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Media Deleted', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.media.deleted]
+												<tr>
+													<td>[media.deleted.date]</td>
+													<td>[media.name]</span></td>
+
+												</tr>
+												[/section.media.deleted]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Media Deleted -->
+
+								<!-- End Media --------------------------------------------------->
+
+								<!-- End Content Creation and Updates ------------------------------------------------------------->
+
 								<!-- Report Closing Message  -->
+								<!-- <div class="page-break"></div>  -->
 								<br>
 								<br>
 								<br>
