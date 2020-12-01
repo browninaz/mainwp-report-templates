@@ -372,7 +372,7 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Plugin Updates -->
 
-								<div class="page-break"></div>
+								<!-- <div class="page-break"></div> -->
 
 								<?php do_action('mainwp_pro_reports_after_updates'); ?>
 
