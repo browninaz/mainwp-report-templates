@@ -250,9 +250,9 @@ $outro = nl2br($outro); // to fix
 								<div style="margin-left: 50px;">
 									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Malware Scans<br>[sucuri.checks.count]</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimization<br>[maintenance.process.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Security Scans<br>[sucuri.checks.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>[backup.created.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>											
 											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>
 									</table>
@@ -378,6 +378,42 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Updates Data -->
 
+								<!-- Security Scans -->
+
+								<?php if (is_plugin_active('mainwp-sucuri-extension/mainwp-sucuri-extension.php')) : ?>
+									[config-section-data]
+									<?php echo $config_tokens[$showhide_values['security']]; ?>
+									<!-- <div class="page-break"></div> -->
+									<div style="margin: 0;">
+										<div style="margin: 0;">
+											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Security Scans', 'mainwp-pro-reports-extension'); ?></p>
+											<?php do_action('mainwp_pro_reports_before_sucuri'); ?>
+											<table cellspacing="0">
+												<thead>
+													<tr style="font-weight: bold;">
+														<td><?php echo __('Scanned on', 'mainwp-pro-reports-extension'); ?></td>
+														<td><?php echo __('Malware Status', 'mainwp-pro-reports-extension'); ?></td>
+														<td><?php echo __('Webtrust Status', 'mainwp-pro-reports-extension'); ?></td>
+													</tr>
+												</thead>
+												<tbody>
+													[section.sucuri.checks]
+													<tr>
+														<td>[sucuri.check.date]</td>
+														<td>[sucuri.check.status]</td>
+														<td>[sucuri.check.webtrust]</td>
+													</tr>
+													[/section.sucuri.checks]
+												</tbody>
+											</table>
+											<?php do_action('mainwp_pro_reports_after_sucuri'); ?>
+										</div>
+									</div>
+									[/config-section-data]
+								<?php endif; ?>
+
+								<!-- End Security Scans -->
+
 								<!-- Backups Data -->
 
 								<?php
@@ -419,14 +455,14 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Backups Data -->
 
-								<!-- Maintenance Data -->
+								<!-- Database Optimizations Data -->
 
 								<?php if (is_plugin_active('mainwp-maintenance-extension/mainwp-maintenance-extension.php')) : ?>
 									[config-section-data]
 									<?php echo $config_tokens[$showhide_values['maintenance']]; ?>
 									<div style="margin: 0;">
 										<div style="margin: 0;">
-											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Maintenance', 'mainwp-pro-reports-extension'); ?></p>
+											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Database Optimizations', 'mainwp-pro-reports-extension'); ?></p>
 											<?php do_action('mainwp_pro_reports_before_maintenance'); ?>
 											<table style="border:1px solid #ddd;width:100%;clear:both;" cellspacing="0">
 												<thead>
@@ -451,7 +487,7 @@ $outro = nl2br($outro); // to fix
 									[/config-section-data]
 								<?php endif; ?>
 
-								<!-- End Maintenance Data -->
+								<!-- End Database Optimizations Data -->
 
 								<!-- Content Creation and Updates ----------------------------------------------------------------->
 
@@ -774,10 +810,7 @@ $outro = nl2br($outro); // to fix
 								<!-- End Content Creation and Updates ------------------------------------------------------------->
 
 								<!-- Report Closing Message  -->
-								<!-- <div class="page-break"></div>  -->
-								<br>
-								<br>
-								<br>
+								<div class="page-break"></div>
 								<div style="margin: 0;">
 									<div style="margin: 0;">
 										<p><?php echo MainWP_Pro_Reports_Utility::esc_content($outro); ?></p>
