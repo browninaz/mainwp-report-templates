@@ -7,7 +7,7 @@ The markup and styles for templates 1 and 2 respectively belong to Joshua Vander
 
 The plw-es-bus-no-post template is sent to our clients that subscribed to the essential maintenance package and are not having us create blog posts. This template is currently being used, but the code needs to be cleaned up and some additional styling needs done (i.e.- padding, margins, etc.)
 
-The plw-es-bus-w-post template is sent to our clients that have subscribed to the essential maintenance package and are having us create blog posts and comment management. This template,too, needs to be polished up a bit.
+The plw-es-bus-w-post template is sent to our clients that have subscribed to the essential maintenance package and are having us create blog posts and managing comments. This template,too, needs to be polished up a bit.
 
 The goal is to customize templates to use for our clients at each maintenance package level. Once the first template is styled to satisfaction, the rest should be  pretty straight forward.
 
