@@ -4,7 +4,7 @@ Template Name: Essential Maintenance Report - No Posts
 Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with continual content creation.
 Version: 1.0
 Author: Ben Brown
-Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/PLW-Logo-590x242.png
+Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
 */
 
 if (!defined('ABSPATH')) {
