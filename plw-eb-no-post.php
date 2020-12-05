@@ -223,36 +223,50 @@ $outro = nl2br($outro); // to fix
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">New Visits<br>[ga.new.visits]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Uptime<br>[aum.uptime30]</td>
 										</tr>
-
 									</table>
 								</div>
 
 								<!-- End Performance Table -->
 
-								<!-- Begin Pagespeed table -->
+								<!-- Begin Pagespeed tables -->
 
 								<div style="margin: auto; right: 0; left: 0; width: 250px; border-bottom: 1px solid #ddd; ">
 
 								</div>
 
-								<div>
+								<div style="margin-left: 75px; margin-bottom: 25px;">
 									<table style="border: 0px; margin-left: -70px;">
 										<tr>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;"> 
-											<p style="font-weight: bold;">Page Speed</p>
-											<p style="margin-left: 10px;"><img src="https://pinklizardweb.com/management/wp-content/uploads/2020/12/pagespeed-graph.jpg" alt="Pagespeed" width="250" height="auto" /></p>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">
+												<p style="font-weight: bold;">Page Speed</p>
+												<p style="margin-left: 10px;"><img src="https://pinklizardweb.com/management/wp-content/uploads/2020/12/pagespeed-graph.jpg" alt="Pagespeed" width="250" height="auto" /></p>
 											</td>
 										</tr>
-										
-										<tr>
-											<td style="border: 0px; text-align: left; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop]</td>
-											<td style="border: 0px; text-align: right; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile]</td>
+
+									</table>
+
+								</div>
+								<div style="margin-top: -50px; margin-left: 75px; margin-bottom: 25px;">
+									<table style="border: 0px; margin-left: -70px;">
+										<tr style="margin-left: -50px;">
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile]</td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
 										</tr>
-										
+
 									</table>
 								</div>
 
-								<!-- End Pagespeed Table -->
+								<!-- End Pagespeed tables -->
 
 								<!-- Begin Updates table -->
 
