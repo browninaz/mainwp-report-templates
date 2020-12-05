@@ -215,7 +215,7 @@ $outro = nl2br($outro); // to fix
 
 								<h2 style="margin-top: -15px; text-align: left;"> Activity Overview</h2>
 								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px; padding-bottom: 3px;">Performance</p>
-								<div style="margin-left: 50px;">
+								<div style="margin-left: 50px; margin-bottom: 25px;">
 									<table style="border: 0px; margin-left: -70px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Site Vistiors<br>[ga.visits]</td>
@@ -223,10 +223,36 @@ $outro = nl2br($outro); // to fix
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">New Visits<br>[ga.new.visits]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Uptime<br>[aum.uptime30]</td>
 										</tr>
+
 									</table>
 								</div>
 
 								<!-- End Performance Table -->
+
+								<!-- Begin Pagespeed table -->
+
+								<div style="margin: auto; right: 0; left: 0; width: 250px; border-bottom: 1px solid #ddd; ">
+
+								</div>
+
+								<div>
+									<table style="border: 0px; margin-left: -70px;">
+										<tr>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;"> 
+											<p style="font-weight: bold;">Page Speed</p>
+											<p style="margin-left: 10px;"><img src="https://pinklizardweb.com/management/wp-content/uploads/2020/12/pagespeed-graph.jpg" alt="Pagespeed" width="250" height="auto" /></p>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="border: 0px; text-align: left; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop]</td>
+											<td style="border: 0px; text-align: right; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile]</td>
+										</tr>
+										
+									</table>
+								</div>
+
+								<!-- End Pagespeed Table -->
 
 								<!-- Begin Updates table -->
 
@@ -252,7 +278,7 @@ $outro = nl2br($outro); // to fix
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Security Scans<br>[sucuri.checks.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>[backup.created.count]</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>										
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>
 									</table>
