@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: Essential Maintenance Report - No Posts
-Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with continual content creation. For sites that have to be backed up manually.
+Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with no blog posts.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
@@ -215,7 +215,7 @@ $outro = nl2br($outro); // to fix
 
 								<h2 style="margin-top: -15px; text-align: left;"> Activity Overview</h2>
 								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: -10px; padding-bottom: 3px;">Performance</p>
-								<div style="margin-left: 50px;">
+								<div style="margin-left: 50px; margin-bottom: 25px;">
 									<table style="border: 0px; margin-left: -70px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Site Vistiors<br>[ga.visits]</td>
@@ -227,6 +227,46 @@ $outro = nl2br($outro); // to fix
 								</div>
 
 								<!-- End Performance Table -->
+
+								<!-- Begin Pagespeed tables -->
+
+								<div style="margin: auto; right: 0; left: 0; width: 250px; border-bottom: 1px solid #ddd; ">
+
+								</div>
+
+								<div style="margin-left: 65px; margin-bottom: 25px;">
+									<table style="border: 0px; margin-left: -70px;">
+										<tr>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">
+												<p style="font-weight: bold;">Page Speed</p>
+												<p style="margin-left: 10px;"><img src="https://pinklizardweb.com/management/wp-content/uploads/2020/12/pagespeed-graph.jpg" alt="Pagespeed" width="250" height="auto" /></p>
+											</td>
+										</tr>
+
+									</table>
+
+								</div>
+								<div style="margin-top: -50px; margin-left: 65px; margin-bottom: 25px;">
+									<table style="border: 0px; margin-left: -70px;">
+										<tr style="margin-left: -50px;">
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile]</td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+											<td style="border: 0px;"></td>
+										</tr>
+
+									</table>
+								</div>
+
+								<!-- End Pagespeed tables -->
 
 								<!-- Begin Updates table -->
 
@@ -247,12 +287,12 @@ $outro = nl2br($outro); // to fix
 								<!-- Begin Security table -->
 
 								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Security</p>
-								<div style="margin-left: 50px;">
+								<div style="margin-left: 60px;">
 									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Security Scans<br>[sucuri.checks.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>4</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>											
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>
 									</table>
@@ -712,7 +752,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Uploads', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugin/Theme Uploads', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -746,7 +786,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Updated', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugin/Theme Updates', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -780,7 +820,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Deleted', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugins/Themes Deleted', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">

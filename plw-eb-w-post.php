@@ -234,7 +234,7 @@ $outro = nl2br($outro); // to fix
 
 								</div>
 
-								<div style="margin-left: 75px; margin-bottom: 25px;">
+								<div style="margin-left: 65px; margin-bottom: 25px;">
 									<table style="border: 0px; margin-left: -70px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">
@@ -246,7 +246,7 @@ $outro = nl2br($outro); // to fix
 									</table>
 
 								</div>
-								<div style="margin-top: -50px; margin-left: 75px; margin-bottom: 25px;">
+								<div style="margin-top: -50px; margin-left: 65px; margin-bottom: 25px;">
 									<table style="border: 0px; margin-left: -70px;">
 										<tr style="margin-left: -50px;">
 											<td style="border: 0px;"></td>
@@ -287,7 +287,7 @@ $outro = nl2br($outro); // to fix
 								<!-- Begin Security table -->
 
 								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Security</p>
-								<div style="margin-left: 50px;">
+								<div style="margin-left: 60px;">
 									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Security Scans<br>[sucuri.checks.count]</td>
@@ -752,7 +752,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Uploads', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugin/Theme Uploads', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -786,7 +786,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Updated', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugin/Theme Updates', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
@@ -820,7 +820,7 @@ $outro = nl2br($outro); // to fix
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media Deleted', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugins/Themes Deleted', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
