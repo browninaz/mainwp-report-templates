@@ -254,8 +254,8 @@ $outro = nl2br($outro); // to fix
 											<td style="border: 0px;"></td>
 											<td style="border: 0px;"></td>
 											<td style="border: 0px;"></td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop]</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop] / 100</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile] / 100</td>
 											<td style="border: 0px;"></td>
 											<td style="border: 0px;"></td>
 											<td style="border: 0px;"></td>
@@ -291,7 +291,7 @@ $outro = nl2br($outro); // to fix
 									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Security Scans<br>[sucuri.checks.count]</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>[backup.created.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>4</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>
@@ -423,7 +423,7 @@ $outro = nl2br($outro); // to fix
 								<?php if (is_plugin_active('mainwp-sucuri-extension/mainwp-sucuri-extension.php')) : ?>
 									[config-section-data]
 									<?php echo $config_tokens[$showhide_values['security']]; ?>
-									<!-- <div class="page-break"></div> -->
+									<div class="page-break"></div>
 									<div style="margin: 0;">
 										<div style="margin: 0;">
 											<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Security Scans', 'mainwp-pro-reports-extension'); ?></p>
@@ -533,56 +533,21 @@ $outro = nl2br($outro); // to fix
 
 								<!-- Pages ------------------------------------------------------->
 
-								<!-- Pages Created -->
-
-								[config-section-data]
-								<?php echo $config_tokens[$showhide_values['pages-created']]; ?>
-
-								<div class="page-break"></div>
-
-								<div style="margin: 0;">
-									<div style="margin: 0;">
-										<h2 style="margin-top: -15px; text-align: left;"> Content Creation and Updates</h2>
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Pages Created', 'mainwp-pro-reports-extension'); ?></p>
-										<table cellspacing="0">
-											<thead>
-												<tr style="font-weight: bold;">
-													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
-													<td><?php echo __('Page(s) Created', 'mainwp-pro-reports-extension'); ?></td>
-
-												</tr>
-											</thead>
-											<tbody>
-												[section.pages.created]
-												<tr>
-													<td>[page.created.date]</td>
-													<td>[page.title]</span></td>
-
-												</tr>
-												[/section.pages.created]
-											</tbody>
-										</table>
-									</div>
-								</div>
-								[/config-section-data]
-
-								<!-- End Pages Created -->
-
 								<!-- Pages Updated -->
 
 								[config-section-data]
 								<?php echo $config_tokens[$showhide_values['pages-updated']]; ?>
 
-								<!-- <div class="page-break"></div> -->
+								<div class="page-break"></div>
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Pages Updated', 'mainwp-pro-reports-extension'); ?></p>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Page Updates', 'mainwp-pro-reports-extension'); ?></p>
 										<table cellspacing="0">
 											<thead>
 												<tr style="font-weight: bold;">
 													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
-													<td><?php echo __('Page(s) Updated', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Page Updated', 'mainwp-pro-reports-extension'); ?></td>
 
 												</tr>
 											</thead>
@@ -602,6 +567,41 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Pages Updated -->
 
+								<!-- Pages Created -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['pages-created']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<h2 style="margin-top: -15px; text-align: left;"> Content Creation and Updates</h2>
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Pages Created', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Page Created', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.pages.created]
+												<tr>
+													<td>[page.created.date]</td>
+													<td>[page.title]</span></td>
+
+												</tr>
+												[/section.pages.created]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Pages Created -->
+
 								<!-- Pages Deleted -->
 
 								[config-section-data]
@@ -616,7 +616,7 @@ $outro = nl2br($outro); // to fix
 											<thead>
 												<tr style="font-weight: bold;">
 													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
-													<td><?php echo __('Page(s) Deleted', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Page Deleted', 'mainwp-pro-reports-extension'); ?></td>
 
 												</tr>
 											</thead>
@@ -639,39 +639,6 @@ $outro = nl2br($outro); // to fix
 								<!-- End Pages --------------------------------------------------->
 
 								<!-- Posts ------------------------------------------------------->
-
-								<!-- Posts Created -->
-
-								[config-section-data]
-								<?php echo $config_tokens[$showhide_values['post-created']]; ?>
-
-								<div class="page-break"></div>
-
-								<div style="margin: 0;">
-									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Posts Created', 'mainwp-pro-reports-extension'); ?></p>
-										<table cellspacing="0">
-											<thead>
-												<tr style="font-weight: bold;">
-													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
-													<td><?php echo __('Post Created', 'mainwp-pro-reports-extension'); ?></td>
-												</tr>
-											</thead>
-											<tbody>
-												[section.posts.created]
-												<tr>
-													<td>[post.created.date]</td>
-													<td>[post.title]</span></td>
-
-												</tr>
-												[/section.posts.created]
-											</tbody>
-										</table>
-									</div>
-								</div>
-								[/config-section-data]
-
-								<!-- End Posts Created -->
 
 								<!-- Posts Updated -->
 
@@ -706,12 +673,45 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Posts Updated -->
 
+								<!-- Posts Created -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['post-created']]; ?>
+
+								<!-- <div class="page-break"></div> -->
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Posts Created', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Post Created', 'mainwp-pro-reports-extension'); ?></td>
+												</tr>
+											</thead>
+											<tbody>
+												[section.posts.created]
+												<tr>
+													<td>[post.created.date]</td>
+													<td>[post.title]</span></td>
+
+												</tr>
+												[/section.posts.created]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Posts Created -->
+
 								<!-- Posts Deleted -->
 
 								[config-section-data]
 								<?php echo $config_tokens[$showhide_values['post-deleted']]; ?>
 
-								<div class="page-break"></div>
+								<!-- <div class="page-break"></div> -->
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
@@ -742,6 +742,40 @@ $outro = nl2br($outro); // to fix
 								<!-- End Posts --------------------------------------------------->
 
 								<!-- Media ------------------------------------------------------->
+
+								<!-- Media Updated -->
+
+								[config-section-data]
+								<?php echo $config_tokens[$showhide_values['media-updated']]; ?>
+
+								<div class="page-break"></div>
+
+								<div style="margin: 0;">
+									<div style="margin: 0;">
+										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugin/Theme Updates', 'mainwp-pro-reports-extension'); ?></p>
+										<table cellspacing="0">
+											<thead>
+												<tr style="font-weight: bold;">
+													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
+													<td><?php echo __('Media Updated', 'mainwp-pro-reports-extension'); ?></td>
+
+												</tr>
+											</thead>
+											<tbody>
+												[section.media.updated]
+												<tr>
+													<td>[media.updated.date]</td>
+													<td>[media.name]</span></td>
+
+												</tr>
+												[/section.media.updated]
+											</tbody>
+										</table>
+									</div>
+								</div>
+								[/config-section-data]
+
+								<!-- End Media Updated -->
 
 								<!-- Media Uploaded -->
 
@@ -776,40 +810,6 @@ $outro = nl2br($outro); // to fix
 								[/config-section-data]
 
 								<!-- End Media Uploaded-->
-
-								<!-- Media Updated -->
-
-								[config-section-data]
-								<?php echo $config_tokens[$showhide_values['media-updated']]; ?>
-
-								<!-- <div class="page-break"></div> -->
-
-								<div style="margin: 0;">
-									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Media and Premium Plugin/Theme Updates', 'mainwp-pro-reports-extension'); ?></p>
-										<table cellspacing="0">
-											<thead>
-												<tr style="font-weight: bold;">
-													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
-													<td><?php echo __('Media Updated', 'mainwp-pro-reports-extension'); ?></td>
-
-												</tr>
-											</thead>
-											<tbody>
-												[section.media.updated]
-												<tr>
-													<td>[media.updated.date]</td>
-													<td>[media.name]</span></td>
-
-												</tr>
-												[/section.media.updated]
-											</tbody>
-										</table>
-									</div>
-								</div>
-								[/config-section-data]
-
-								<!-- End Media Updated -->
 
 								<!-- Media Deleted -->
 
