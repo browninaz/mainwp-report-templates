@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: Essential Maintenance Report - No Posts
-Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with no blog posts.
+Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with manual backups.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
@@ -286,7 +286,7 @@ $outro = nl2br($outro); // to fix
 
 								<!-- Begin Security table -->
 
-								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Security</p>
+								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Security & Maintenance</p>
 								<div style="margin-left: 60px;">
 									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
@@ -307,6 +307,7 @@ $outro = nl2br($outro); // to fix
 								<!---------------------------- Begin Full Activity Report ------------------------------------>
 
 								<h2 style="margin-top: -15px; text-align: left;"> Full Activity Report</h2>
+								<div style="margin-top: -25px;"></div>
 
 								<!-- Updates Data -->
 
