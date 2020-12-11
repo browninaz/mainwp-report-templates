@@ -329,13 +329,13 @@ $outro = nl2br($outro); // to fix
 												</tr>
 											</thead>
 											<tbody>
-												[section.WordPress.updated]
+												[section.wordpress.updated]
 												<tr>
-													<td>[WordPress.updated.date]</td>
-													<td>[WordPress.old.version]</td>
-													<td>[WordPress.current.version]</td>
+													<td>[wordpress.updated.date]</td>
+													<td>[wordpress.old.version]</td>
+													<td>[wordpress.current.version]</td>
 												</tr>
-												[/section.WordPress.updated]
+												[/section.wordpress.updated]
 											</tbody>
 										</table>
 									</div>
