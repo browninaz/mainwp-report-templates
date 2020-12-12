@@ -60,10 +60,6 @@ $outro = nl2br($outro); // to fix
 			font-family: 'Lato', sans-serif;
 		}
 
-		a {
-			text-decoration: none;
-		}
-
 		p {
 			font-family: 'Lato', sans-serif;
 		}
@@ -85,29 +81,6 @@ $outro = nl2br($outro); // to fix
 			font-family: 'Lato', sans-serif;
 		}
 
-		h1 {
-			<?php echo esc_html($accent_color); ?>font-weight: bold;
-			font-size: 32px;
-			margin-bottom: 5px;
-			font-family: 'Lato', sans-serif;
-		}
-
-		h2 {
-			<?php echo esc_html($accent_color); ?>font-weight: bold;
-			font-size: 22px;
-			font-family: 'Lato', sans-serif;
-		}
-
-		h3 {
-			color: #666666;
-			font-weight: normal;
-			font-size: 24px;
-			font-family: 'Lato', sans-serif;
-		}
-
-		#ga-chart img {
-			width: 100%;
-		}
 	</style>
 </head>
 
@@ -127,8 +100,8 @@ $outro = nl2br($outro); // to fix
 
 							<td style="border-bottom: 0px; padding-left: 35px; padding-right: 15px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:80px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
-								<p style="text-align: left; margin-top: 12px; margin-left: -300px;">PINK LIZARD WEB, LLC</p><br>
-								<p style="font-size: 12px; text-align: left; margin-left: -300px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
+								<p style="text-align: left; margin-top: 12px; margin-left: -290px;">PINK LIZARD WEB, LLC</p><br>
+								<p style="font-size: 12px; text-align: left; margin-left: -290px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
 							</td>
 
 							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
@@ -177,7 +150,7 @@ $outro = nl2br($outro); // to fix
 
 						<!-- Report Closing Message  -->
 
-						<div style="width:100%;text-align:left;">
+						<div style="margin-top: -65px; width:100%;text-align:left;">
 							<div style="margin:10px; text-align:left;">
 							</div>
 							<div style="padding:0px;">
