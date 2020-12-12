@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: Essential Maintenance Report
-Description: This report is sent to PLW Clients subscribed to the essential maintenance plan.
+Template Name: Admin Hosting Notice
+Description: This report is sent to PLW Clients as a reminder for upcoming hosting renewals.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
@@ -10,17 +10,6 @@ Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-lo
 if (!defined('ABSPATH')) {
 	exit;
 } // Exit if accessed directly
-
-$config_tokens = array(
-	0 => '[hide-if-empty]',
-	1 => '', // show report data
-	2 => '[hide-section-data]',
-);
-
-$default_config = array(
-	'matomo'          => 0,
-);
-
 
 $bg_color = $report->background_color;
 
@@ -96,6 +85,26 @@ $outro = nl2br($outro); // to fix
 			font-family: 'Lato', sans-serif;
 		}
 
+		h1 {
+			<?php echo esc_html($accent_color); ?>font-weight: bold;
+			font-size: 32px;
+			margin-bottom: 5px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		h2 {
+			<?php echo esc_html($accent_color); ?>font-weight: bold;
+			font-size: 22px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		h3 {
+			color: #666666;
+			font-weight: normal;
+			font-size: 24px;
+			font-family: 'Lato', sans-serif;
+		}
+
 		#ga-chart img {
 			width: 100%;
 		}
@@ -128,7 +137,7 @@ $outro = nl2br($outro); // to fix
 								<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
 
 								<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
-								<p style="margin-right: -140px; margin-top: -20px;">WEBHOSTING EXPIRATION NOTICE</p>
+								<p style="margin-right: -140px; margin-top: -20px;">LIFE CHURCH AT SOUTH MOUNTAIN</p>
 							</td>
 						</tr>
 					</table>
@@ -137,19 +146,19 @@ $outro = nl2br($outro); // to fix
 				<!-- End Header ---------------------------------------------------------------------------------------------------------------->
 
 				<!-- Client information and report date range directly under header -->
-				<table style="border: 0px; margin-right: -100px; margin-top: -30px;">
+				<table style="border: 0px; margin-right: -100px;">
 					<tr>
 						<td style="vertical-align: center; border-bottom: 0px;">
 							<p style="padding-left: 40px; font-weight: bold;">Client:</p>
 						</td>
 						<td style="border-bottom: 0px;">
-							<p style="margin-top: -25px; margin-left: -95px;">[client.contact.name]<br>[client.contact.address.1]<br>[client.city],&nbsp;[client.state] &nbsp;[client.zip]</p>
+							<p style="margin-left: -95px;">[client.contact.name]<br>[client.contact.address.1]<br>[client.city],&nbsp;[client.state] &nbsp;[client.zip]</p>
 						</td>
 						<td style="vertical-align: center; text-align: right; padding-left: 50px; border-bottom: 0px;">
 							<p style="font-weight: bold; margin-left: -30px;">Date:<br>Website:</p>
 						</td>
 						<td style="vertical-align: top; border-bottom: 0px;">
-							<p>[report.daterange]<br>[client.site.url]</p>
+							<p>[report.send.date]<br>[client.site.url]</p>
 						</td>
 					</tr>
 				</table>
@@ -164,21 +173,17 @@ $outro = nl2br($outro); // to fix
 							<p><?php echo MainWP_Pro_Reports_Utility::esc_content($intro); ?></p>
 						</div>
 
-
-
-						<!-- End Client Information under header -->
-
 						<!---------------------------------------------------------------------------->
 
 						<!-- Report Closing Message  -->
-						<div class="page-break"></div>
-						<div style="margin: 0;">
-							<div style="margin: 0;">
-								<p><?php echo MainWP_Pro_Reports_Utility::esc_content($outro); ?></p>
-							</div>
-						</div>
 
-					</div>
+						<div style="width:100%;text-align:left;">
+							<div style="margin:10px; text-align:left;">
+							</div>
+							<div style="padding:0px;">
+								<div style="padding:0px 60px 60px; margin-top: -20px;">
+									<p><?php echo MainWP_Pro_Reports_Utility::esc_content($outro); ?></p>
+								</div>
 	</main>
 	<footer></footer>
 </body>
