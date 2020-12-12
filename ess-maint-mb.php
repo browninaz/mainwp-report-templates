@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Essential Maintenance Report - No Posts
+Template Name: Essential Maintenance Report - Manual Backups
 Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with manual backups.
 Version: 1.0
 Author: Pink Lizard Web

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Essential Maintenance Report - No Posts
+Template Name: Essential Maintenance Report
 Description: This report is sent to PLW Clients subscribed to the essential maintenance plan.
 Version: 1.0
 Author: Pink Lizard Web
