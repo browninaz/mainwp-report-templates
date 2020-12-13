@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Admin Hosting Notice
+Template Name: Hosting/Domain Renewal Reminder
 Description: This report is sent to PLW Clients as a reminder for upcoming hosting renewals.
 Version: 1.0
 Author: Pink Lizard Web
@@ -81,6 +81,9 @@ $outro = nl2br($outro); // to fix
 			font-family: 'Lato', sans-serif;
 		}
 
+		.company {
+			text-transform: uppercase;
+		}
 	</style>
 </head>
 
@@ -108,18 +111,17 @@ $outro = nl2br($outro); // to fix
 
 							<td style="border-bottom: 0px;">
 								<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
-
-								<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
-								<p style="margin-right: -140px; margin-top: -20px;">LIFE CHURCH AT SOUTH MOUNTAIN</p>
+								<p class="company" style="margin-right: -140px; margin-top: -20px;">[client.company]</p>
 							</td>
 						</tr>
 					</table>
 				</div>
 
-				<!-- End Header ---------------------------------------------------------------------------------------------------------------->
+				<!-- End Header -->
 
-				<!-- Client information and report date range directly under header -->
-				<table style="border: 0px; margin-right: -100px;">
+				<!-- Client and site information and report date range directly under header -->
+
+				<table style="border: 0px; margin-top: -20px; margin-right: -100px; padding-bottom: 20px;">
 					<tr>
 						<td style="vertical-align: center; border-bottom: 0px;">
 							<p style="padding-left: 40px; font-weight: bold;">Client:</p>
@@ -128,15 +130,17 @@ $outro = nl2br($outro); // to fix
 							<p style="margin-left: -95px;">[client.contact.name]<br>[client.contact.address.1]<br>[client.city],&nbsp;[client.state] &nbsp;[client.zip]</p>
 						</td>
 						<td style="vertical-align: center; text-align: right; padding-left: 50px; border-bottom: 0px;">
-							<p style="font-weight: bold; margin-left: -30px;">Date:<br>Website:</p>
+							<p style="font-weight: bold; margin-left: -30px;">Date:<br>Website:<br>Hosting Provider:</p>
 						</td>
 						<td style="vertical-align: top; border-bottom: 0px;">
-							<p>[report.send.date]<br>[client.site.url]</p>
+							<p>[report.send.date]<br>[client.site.url]<br>[hosting.provider]</p>
 						</td>
 					</tr>
 				</table>
 
-				<!-- Data pulled from the report introduction message editor under the custom content tab -->
+				<!-- End client and site information -->
+
+				<!-- Report body pulled from the report introduction message editor under the custom content tab -->
 
 				<div style="width:100%;text-align:left;">
 					<div style="margin:10px; text-align:left;">
@@ -146,9 +150,9 @@ $outro = nl2br($outro); // to fix
 							<p><?php echo MainWP_Pro_Reports_Utility::esc_content($intro); ?></p>
 						</div>
 
-						<!---------------------------------------------------------------------------->
+						<!-- End Report Body -->
 
-						<!-- Report Closing Message  -->
+						<!-- Report Closing Message -->
 
 						<div style="margin-top: -65px; width:100%;text-align:left;">
 							<div style="margin:10px; text-align:left;">
@@ -157,6 +161,8 @@ $outro = nl2br($outro); // to fix
 								<div style="padding:0px 60px 60px; margin-top: -20px;">
 									<p><?php echo MainWP_Pro_Reports_Utility::esc_content($outro); ?></p>
 								</div>
+
+								<!-- End Report Closing Message  -->
 	</main>
 	<footer></footer>
 </body>
