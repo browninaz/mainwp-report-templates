@@ -187,7 +187,7 @@ $outro = nl2br($outro); // to fix
 						</td>
 					</tr>
 				</table>
-				<table style="table-layout:fixed; border-bottom: 0px; padding-left: 225px; margin-top: -300px;">
+				<table style="table-layout:fixed; border: 0px; padding-left: 225px; margin-top: -300px;">
 					<td style="vertical-align: center; text-align: right; border-bottom: 0px;">
 						<p style="font-weight: bold;">Report Period:<br>Website:<br>WordPress Version:<br>PHP Version:<br>MySQL Version:</p>
 					</td>
