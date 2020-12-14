@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: Hosting/Domain Renewal Reminder
-Description: This report is sent to PLW Clients as a reminder for upcoming hosting renewals.
+Template Name: Domain Renewal Reminder
+Description: This report is sent to PLW Clients as a reminder for upcoming domain renewals.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png

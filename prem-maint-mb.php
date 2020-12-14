@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: Basic Maintenance Report
-Description: This report is sent to PLW Clients subscribed to the basic maintenance plan.
+Template Name: Premium Maintenance Report
+Description: This report is sent to PLW Clients subscribed to the premium maintenance plan.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
@@ -168,7 +168,7 @@ $outro = nl2br($outro); // to fix
 							<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
 
 							<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
-							<p style="margin-right: -140px; margin-top: -20px;">BASIC MAINTENANCE PLAN</p>
+							<p style="margin-right: -140px; margin-top: -20px;">PREMIUM MAINTENANCE PLAN</p>
 						</td>
 						</tr>
 					</table>
