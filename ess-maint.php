@@ -174,23 +174,31 @@ $outro = nl2br($outro); // to fix
 
 				<!-- End Header ---------------------------------------------------------------------------------------------------------------->
 
-				<!-- Client information and report date range directly under header -->
-				<table style="border: 0px; margin-right: -100px; margin-top: -30px;">
+				<!-- Client and site information and report date range directly under header -->
+
+				<table style="table-layout:fixed; border: 0px; margin-top: -20px; padding-bottom: 20px;">
+
 					<tr>
 						<td style="vertical-align: center; border-bottom: 0px;">
-							<p style="padding-left: 40px; font-weight: bold;">Client:</p>
+							<p style="font-weight: bold; padding-left: 50px;">Client:</p>
 						</td>
 						<td style="border-bottom: 0px;">
-							<p style="margin-top: -25px; margin-left: -95px;">[client.contact.name]<br>[client.contact.address.1]<br>[client.city],&nbsp;[client.state] &nbsp;[client.zip]</p>
-						</td>
-						<td style="vertical-align: center; text-align: right; padding-left: 50px; border-bottom: 0px;">
-							<p style="font-weight: bold; margin-left: -30px;">Report Period:<br>Website:<br>WordPress Version:<br>PHP Version:<br>MySQL Version:</p>
-						</td>
-						<td style="vertical-align: top; border-bottom: 0px;">
-							<p>[report.daterange]<br>[client.site.url]<br>[client.site.version]<br>[client.site.php]<br>[client.site.mysql]</p>
+							<p style="margin-left: -300px;">[client.contact.name]<br>[client.contact.address.1]<br>[client.city],&nbsp;[client.state] &nbsp;[client.zip]</p>
 						</td>
 					</tr>
 				</table>
+				<table style="table-layout:fixed; border-bottom: 0px; padding-left: 225px; margin-top: -300px;">
+					<td style="vertical-align: center; text-align: right; border-bottom: 0px;">
+						<p style="font-weight: bold;">Report Period:<br>Website:<br>WordPress Version:<br>PHP Version:<br>MySQL Version:</p>
+					</td>
+					<td style="vertical-align: top; border-bottom: 0px;">
+						<p style="margin-left: -10px;">[report.daterange]<br>[client.site.url]<br>[client.site.version]<br>[client.site.php]<br>[client.site.mysql]</p>
+					</td>
+					</tr>
+
+				</table>
+
+				<!-- End client and site information -->
 
 				<!-- Data pulled from the report introduction message editor under the custom content tab -->
 
