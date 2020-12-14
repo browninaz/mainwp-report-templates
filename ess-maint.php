@@ -149,25 +149,27 @@ $outro = nl2br($outro); // to fix
 				<!-- Report Header -->
 
 				<div style="margin:0 0 30px 0;text-align:center;">
-					<table style="margin-top: -40px; border-top: 0px; border-bottom: 2px solid #ff1493;">
+					<table style="table-layout:fixed; margin-top: -40px; border-top: 0px; border-bottom: 2px solid #ff1493;">
 						<tr>
 
 							<!-- Image token pulled from report content and design customization under the personal branding tab -->
 
 							<td style="border-bottom: 0px; padding-left: 35px; padding-right: 15px;"><img src="[logo.url]" alt="Pink Lizard Web Logo" style="width:80px;height:auto;"></td>
 							<td style="border-bottom: 0px;">
-								<p style="text-align: left; margin-top: 12px; margin-left: -300px;">PINK LIZARD WEB, LLC</p><br>
-								<p style="font-size: 12px; text-align: left; margin-left: -300px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
+								<p style="text-align: left; margin-top: 12px; margin-left: -280px;">PINK LIZARD WEB, LLC</p><br>
+								<p style="font-size: 12px; text-align: left; margin-left: -280px; margin-top: -35px;">602.695.9909 | 480.570.6470</p>
 							</td>
+					</table>
+					<table style="table-layout:fixed; border: 0px; padding-left: 500px; margin-top: -300px;">
 
-							<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
+						<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
 
-							<td style="border-bottom: 0px;">
-								<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
+						<td style="border-bottom: 0px;">
+							<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
 
-								<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
-								<p style="margin-right: -140px; margin-top: -20px;">ESSENTIAL MAINTENANCE PLAN</p>
-							</td>
+							<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
+							<p style="margin-right: -140px; margin-top: -20px;">ESSENTIAL MAINTENANCE PLAN</p>
+						</td>
 						</tr>
 					</table>
 				</div>

@@ -168,7 +168,7 @@ $outro = nl2br($outro); // to fix
 							<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
 
 							<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
-							<p style="margin-right: -140px; margin-top: -20px;">ESSENTIAL MAINTENANCE PLAN</p>
+							<p style="margin-right: -140px; margin-top: -20px;">BASIC MAINTENANCE PLAN</p>
 						</td>
 						</tr>
 					</table>
