@@ -1,12 +1,11 @@
 <?php
 /*
-Template Name: Hosting Renewal Reminder
-Description: This report is sent to PLW Clients as a reminder for upcoming hosting renewals.
+Template Name: Hosting/Domain Renewal Reminder
+Description: This report is sent to PLW Clients as a reminder for upcoming hosting/domain renewals.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
 */
-
 
 if (!defined('ABSPATH')) {
 	exit;
@@ -167,10 +166,10 @@ $outro = nl2br($outro); // to fix
 				</table>
 				<table style="table-layout:fixed; border: 0px; padding-left: 225px; margin-top: -300px;">
 					<td style="vertical-align: center; text-align: right; border-bottom: 0px;">
-						<p style="font-weight: bold;">Date:<br>Website:<br>Hosting Provider:<br>[hosting.provider] Customer #:</p>
+						<p style="font-weight: bold;">Date:<br>Hosting Provider:<br>[hosting.provider] Customer #:</p>
 					</td>
 					<td style="vertical-align: top; border-bottom: 0px;">
-						<p style="margin-left: -10px;">[report.send.date]<br>[client.site.url]<br>[hosting.provider]<br>[hosting.account.number]</p>
+						<p style="margin-left: -10px;">[report.send.date]<br>[hosting.provider]<br>[hosting.account.number]</p>
 					</td>
 					</tr>
 
