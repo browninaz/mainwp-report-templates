@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: Essential Maintenance Report
-Description: This report is sent to PLW Clients subscribed to the essential maintenance plan.
+Template Name: Essential Maintenance Report - Manual Backups
+Description: This report is sent to PLW Clients subscribed to the essential maintenance plan with manual backups.
 Version: 1.0
 Author: Pink Lizard Web
 Screenshot URI: ../wp-content/plugins/mainwp-pro-reports-extension/images/plw-logo-1200x850.png
@@ -301,7 +301,7 @@ $outro = nl2br($outro); // to fix
 									<table style="margin-top: 10px; margin-left: -10px; border: 0px;">
 										<tr>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Security Scans<br>[sucuri.checks.count]</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>[backup.created.count]</td>
+											<td style="border: 0px; text-align: center; vertical-align: text-top;">Backups Created<br>4</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;">Database Optimizations<br>[maintenance.process.count]</td>
 											<td style="border: 0px; text-align: center; vertical-align: text-top;"></td>
 										</tr>

@@ -60,24 +60,53 @@ $outro = nl2br($outro); // to fix
 			font-family: 'Lato', sans-serif;
 		}
 
+		a {
+			text-decoration: none;
+		}
+
 		p {
 			font-family: 'Lato', sans-serif;
 		}
 
 		table {
-
+			border: 1px solid #ddd;
 			width: 100%;
 		}
 
 		table th {
 			padding: 10px;
 			background: #e5e5e5;
-			
+			border-bottom: 1px solid #ddd;
 		}
 
 		table td {
 			padding: 10px;
+			border-bottom: 1px solid #ddd;
 			font-family: 'Lato', sans-serif;
+		}
+
+		h1 {
+			<?php echo esc_html($accent_color); ?>font-weight: bold;
+			font-size: 32px;
+			margin-bottom: 5px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		h2 {
+			<?php echo esc_html($accent_color); ?>font-weight: bold;
+			font-size: 22px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		h3 {
+			color: #666666;
+			font-weight: normal;
+			font-size: 24px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		#ga-chart img {
+			width: 100%;
 		}
 
 		.company {
@@ -112,6 +141,8 @@ $outro = nl2br($outro); // to fix
 
 						<td style="border-bottom: 0px;">
 							<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
+
+							<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
 							<p class="company" style="margin-right: -140px; margin-top: -20px;">[client.company]</p>
 						</td>
 						</tr>
@@ -134,10 +165,10 @@ $outro = nl2br($outro); // to fix
 					</tr>
 				</table>
 				<table style="table-layout:fixed; border: 0px; padding-left: 225px; margin-top: -300px;">
-					<td style="vertical-align: center; text-align: right; border: 0px;">
+					<td style="vertical-align: center; text-align: right; border-bottom: 0px;">
 						<p style="font-weight: bold;">Date:<br>Website:<br>Hosting Provider:<br>[hosting.provider] Customer #:</p>
 					</td>
-					<td style="vertical-align: top; border: 0px;">
+					<td style="vertical-align: top; border-bottom: 0px;">
 						<p style="margin-left: -10px;">[report.send.date]<br>[client.site.url]<br>[hosting.provider]<br>[hosting.account.number]</p>
 					</td>
 					</tr>
