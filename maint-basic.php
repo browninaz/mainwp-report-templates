@@ -238,45 +238,7 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Performance Table -->
 
-								<!-- Begin Pagespeed tables -->
 
-								<div style="margin: auto; right: 0; left: 0; width: 250px; border-bottom: 1px solid #ddd; ">
-
-								</div>
-
-								<div style="margin-left: 65px; margin-bottom: 25px;">
-									<table style="border: 0px; margin-left: -70px;">
-										<tr>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">
-												<p style="font-weight: bold;">Page Speed</p>
-												<p style="margin-left: 10px;"><img src="https://pinklizardweb.com/management/wp-content/uploads/2020/12/pagespeed-graph.jpg" alt="Pagespeed" width="250" height="auto" /></p>
-											</td>
-										</tr>
-
-									</table>
-
-								</div>
-								<div style="margin-top: -50px; margin-left: 65px; margin-bottom: 25px;">
-									<table style="border: 0px; margin-left: -70px;">
-										<tr style="margin-left: -50px;">
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Desktop<br>[pagespeed.average.desktop] / 100</td>
-											<td style="border: 0px; text-align: center; vertical-align: text-top;">Mobile<br>[pagespeed.average.mobile] / 100</td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-											<td style="border: 0px;"></td>
-										</tr>
-
-									</table>
-								</div>
-
-								<!-- End Pagespeed tables -->
 
 								<!-- Begin Updates table -->
 
