@@ -166,7 +166,7 @@ $outro = nl2br($outro); // to fix
 				</table>
 				<table style="table-layout:fixed; border: 0px; padding-left: 225px; margin-top: -300px;">
 					<td style="vertical-align: center; text-align: right; border-bottom: 0px;">
-						<p style="font-weight: bold;">Date:<br>Hosting Provider:<br>[hosting.provider] Customer #:</p>
+						<p style="font-weight: bold;">Date:<br>Hosting Provider:<br>Account/Customer #:</p>
 					</td>
 					<td style="vertical-align: top; border-bottom: 0px;">
 						<p style="margin-left: -10px;">[report.send.date]<br>[hosting.provider]<br>[hosting.account.number]</p>
