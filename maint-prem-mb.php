@@ -194,7 +194,7 @@ $outro = nl2br($outro); // to fix
 						<p style="font-weight: bold;">Report Period:<br>Website:<br>WordPress Version:<br>PHP Version:<br>MySQL Version:</p>
 					</td>
 					<td style="vertical-align: top; border-bottom: 0px;">
-						<p style="margin-left: -10px;">[report.daterange]<br>[client.site.url]<br>[client.site.version]<br>[client.site.php]<br>[client.site.mysql]</p>
+						<p style="margin-left: -10px;">[report.daterange]<br>[client.domain.name]<br>[client.site.version]<br>[client.site.php]<br>[client.site.mysql]</p>
 					</td>
 					</tr>
 
