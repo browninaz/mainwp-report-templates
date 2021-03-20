@@ -140,7 +140,7 @@ $outro = nl2br($outro); // to fix
 						<!-- The following table data is pulled from the report content and design customization editor in the report heading text field -->
 
 						<td style="border-bottom: 0px;">
-							<p style="margin-right: -140px; margin-top: 12px;"><?php echo esc_html($heading); ?></p>
+							<p style="margin-right: -140px; margin-top: 20px;"><?php echo esc_html($heading); ?></p>
 
 							<!-- Change plan type (Basic, Essential, Premium) accoring to client -->
 							<p class="company" style="margin-right: -140px; margin-top: -20px;">[client.company]</p>
