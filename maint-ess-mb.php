@@ -758,7 +758,7 @@ $outro = nl2br($outro); // to fix
 								[config-section-data]
 								<?php echo $config_tokens[$showhide_values['media-uploaded']]; ?>
 
-								<!-- <div class="page-break"></div> -->
+								<div class="page-break"></div>
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
