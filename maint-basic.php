@@ -238,8 +238,6 @@ $outro = nl2br($outro); // to fix
 
 								<!-- End Performance Table -->
 
-
-
 								<!-- Begin Updates table -->
 
 								<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;">Updates</p>
@@ -505,46 +503,12 @@ $outro = nl2br($outro); // to fix
 
 								<!-- Pages ------------------------------------------------------->
 
-								<!-- Pages Updated -->
-
-								[config-section-data]
-								<?php echo $config_tokens[$showhide_values['pages-updated']]; ?>
-
-								<div class="page-break"></div>
-
-								<div style="margin: 0;">
-									<div style="margin: 0;">
-										<p style="font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 20px; padding-bottom: 3px;"><?php echo __('Page Updates', 'mainwp-pro-reports-extension'); ?></p>
-										<table cellspacing="0">
-											<thead>
-												<tr style="font-weight: bold;">
-													<td><?php echo __('Date', 'mainwp-pro-reports-extension'); ?></td>
-													<td><?php echo __('Page Updated', 'mainwp-pro-reports-extension'); ?></td>
-
-												</tr>
-											</thead>
-											<tbody>
-												[section.pages.updated]
-												<tr>
-													<td>[page.created.date]</td>
-													<td>[page.title]</span></td>
-
-												</tr>
-												[/section.pages.updated]
-											</tbody>
-										</table>
-									</div>
-								</div>
-								[/config-section-data]
-
-								<!-- End Pages Updated -->
-
 								<!-- Pages Created -->
 
 								[config-section-data]
 								<?php echo $config_tokens[$showhide_values['pages-created']]; ?>
 
-								<!-- <div class="page-break"></div> -->
+								<div class="page-break"></div> 
 
 								<div style="margin: 0;">
 									<div style="margin: 0;">
