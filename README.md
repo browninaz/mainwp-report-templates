@@ -18,7 +18,7 @@ The goal was to customize templates to use for our clients at each maintenance p
 
 Custom tokens were created in MainWP to add client specific info.
 
-Each report is sent to our clients that subscribed to a specific maintenance plan. These templates are currently being used and look pretty good, but the code needs to be cleaned up and some additional styling needs done (i.e.- padding, margins, spaghetti code, etc.)
+Each report is sent to our clients that subscribed to a specific maintenance plan. These templates are currently being used and look pretty good, but the code needs to be cleaned up and some additional styling needs done (i.e.- padding, margins, some spaghetti code, etc.)
 
 
 If anyone visiting this page has custom template ideas or complete designs, please message me, any help is greatly appreciated! Also, if these templates can be of use to you, feel free to copy. Hope this helps!
