@@ -4,10 +4,15 @@ This is the repo for Pink Lizard Web MainWP Pro Report templates.
 After scouring the internet for template ideas, it seems there are few independant developers or agencies that have shared MainWP Pro Report Template ideas and designs. 
 
 maint-basic = Basic maintenance package report.
+
 maint-ess = Essential maintenance package report.
+
 maint-prem = Premium maintenance package report.
+
 renewal-domain = Domain renewal reminder report.
+
 renewal-hosting-domain = Hosting and domain renewal report.
+
 renewal-hosting = Hosting renewal report.
 
 Custom tokens were created in MainWP to add client specific info.
