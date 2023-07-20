@@ -12,9 +12,9 @@ The goal was to customize templates to use for our clients at each maintenance p
 
 *renewal-domain = Domain renewal reminder report.
 
-*renewal-hosting-domain = Hosting and domain renewal report.
+*renewal-hosting-domain = Hosting and domain renewal reminder report.
 
-*renewal-hosting = Hosting renewal report.
+*renewal-hosting = Hosting renewal reminder report.
 
 Custom tokens were created in MainWP to add client specific info.
 
