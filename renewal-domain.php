@@ -13,14 +13,6 @@ if (!defined('ABSPATH')) {
 
 $bg_color = $report->background_color;
 
-$showhide_values = @json_decode($report->showhide_sections, 1);
-
-if (!is_array($showhide_values)) {
-	$showhide_values = array();
-}
-
-$showhide_values = array_merge($default_config, $showhide_values);
-
 if (!empty($bg_color)) {
 	$bg_color = 'background:' . $bg_color . ';';
 }
@@ -166,10 +158,10 @@ $outro = nl2br($outro); // to fix
 				</table>
 				<table style="table-layout:fixed; border: 0px; padding-left: 225px; margin-top: -300px;">
 					<td style="vertical-align: center; text-align: right; border-bottom: 0px;">
-						<p style="font-weight: bold;">Date:<br>Hosting Provider:<br>Account/Customer #:</p>
+						<p style="font-weight: bold;">Date:<br>Hosting Provider:<br>Account/Customer #:<br>Pin #:</p>
 					</td>
 					<td style="vertical-align: top; border-bottom: 0px;">
-						<p style="margin-left: -10px;">[report.send.date]<br>[hosting.provider]<br>[hosting.account.number]</p>
+						<p style="margin-left: -10px;">[report.send.date]<br>[hosting.provider]<br>[hosting.account.number]<br>[hosting.pin]</p>
 					</td>
 					</tr>
 
