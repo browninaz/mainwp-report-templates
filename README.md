@@ -2,7 +2,7 @@
  
 After scouring the internet for MainWP Pro Report template ideas, it seems there are few independant developers or agencies that have shared MainWP Pro Report Template ideas and designs. 
 
-The goal was to customize templates to use for our clients at each maintenance package level. Once the first template was styled to satisfaction, the rest were pretty straight forward.
+The goal was to customize templates to use for our clients at each maintenance package level. Once the first template was styled to satisfaction, the rest were pretty straight forward. Hopefully the comments in the template will help you to identify the specifics.
 
 *maint-basic = Basic maintenance package report.
 
